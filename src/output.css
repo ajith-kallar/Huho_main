@@ -668,6 +668,10 @@ video {
   display: inline-flex;
 }
 
+.table {
+  display: table;
+}
+
 .grid {
   display: grid;
 }
@@ -712,10 +716,6 @@ video {
 
 .h-64 {
   height: 16rem;
-}
-
-.h-\[400px\] {
-  height: 400px;
 }
 
 .h-full {
@@ -872,6 +872,14 @@ video {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+.text-wrap {
+  text-wrap: wrap;
+}
+
+.text-nowrap {
+  text-wrap: nowrap;
 }
 
 .rounded {
@@ -1244,6 +1252,11 @@ video {
   color: rgb(220 38 38 / var(--tw-text-opacity));
 }
 
+.text-teal-500 {
+  --tw-text-opacity: 1;
+  color: rgb(20 184 166 / var(--tw-text-opacity));
+}
+
 .text-teal-600 {
   --tw-text-opacity: 1;
   color: rgb(13 148 136 / var(--tw-text-opacity));
@@ -1256,16 +1269,6 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-teal-500 {
-  --tw-text-opacity: 1;
-  color: rgb(20 184 166 / var(--tw-text-opacity));
-}
-
-.text-teal-50 {
-  --tw-text-opacity: 1;
-  color: rgb(240 253 250 / var(--tw-text-opacity));
 }
 
 .antialiased {
@@ -1325,20 +1328,23 @@ video {
   transition-duration: 150ms;
 }
 
-/
-
-
-.inika-regular {
-  font-family: "Inika",;
+body{
+  font-family: "Inika", serif;
   font-weight: 400;
   font-style: normal;
 }
 
-.inika-bold {
-  font-family: "Inika", ;
-  font-weight: 700;
-  font-style: normal;
+/* .inika-regular {
+    font-family: "Inika", serif;
+    font-weight: 400;
+    font-style: normal;
 }
+
+.inika-bold {
+    font-family: "Inika", serif;
+    font-weight: 700;
+    font-style: normal;
+} */
 
 .placeholder\:opacity-0::-moz-placeholder {
   opacity: 0;
@@ -1791,6 +1797,10 @@ video {
 
   .sm\:justify-between {
     justify-content: space-between;
+  }
+
+  .sm\:text-nowrap {
+    text-wrap: nowrap;
   }
 
   .sm\:p-8 {
